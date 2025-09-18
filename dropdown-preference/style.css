@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+input, button, select {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
