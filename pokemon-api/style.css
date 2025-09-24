@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: wheat;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.container {
+    height: 600px;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.card {
+    background: lime;
+    padding: 3rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
