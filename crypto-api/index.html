@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Crypto Price Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Checker</h1>
+        <select id="cryptoSelect">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="xrp">XRP</option>
+            <option value="cronos">Cronos</option>
+        </select>
+        <button id="checkBtn">CheckPrice</button>
+        <div id="priceDisplay" class="card"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
