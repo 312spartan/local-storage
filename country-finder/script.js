@@ -43,11 +43,13 @@ const countryDisplay = document.getElementById("countryDisplay");
 
 searchBtn.addEventListener("click", async () => {
     const country = countryInput.value.trim();
-    const url = `https://restcountries.com/v3.1/name/${country}/mexico`;
+    const url = `https://restcountries.com/v3.1/${name}/${country}/mexico`;
 
     try {
         const response = await axios.get(url);
-        const name = response.data[country].common;
+        const name = response.data.country.common;
+        const population = response.data.population;
+        const capital = response.data.capital[0]; 
         countryDisplay.innerHTML = `<h2>${country.toUpperCase()}</h2>`;
     } catch (error) {
         countryDisplay.innerHTML = `<p style='color:red font:bold'>Failed to find country</p>`;
