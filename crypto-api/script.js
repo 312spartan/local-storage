@@ -40,7 +40,7 @@ checkBtn.addEventListener("click", async () => {
         const price = response.data[crypto].usd;
         priceDisplay.innerHTML = `<h2>${crypto.toUpperCase()}</h2> <p>Current price: ${price}</p>`;
     } catch (error) {
-        priceDisplay.innerHTML = `<p style='color:red; font:bold'>Failed to look up crypto</p>`
+        priceDisplay.innerHTML = `<p style='color:red; font:bold'>Failed to look up crypto</p>`;
     }
 
 });
